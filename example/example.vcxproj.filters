@@ -1,2 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" />
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Dependence">
+      <UniqueIdentifier>{4881b495-e0ce-49ad-9cc9-6128f75ceec2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK">
+      <UniqueIdentifier>{a0253ce6-9500-4f5e-8c8c-b4732e9d2e5c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\NaResolver\NaResolver.h">
+      <Filter>Dependence</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mscorlib.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UnityEngine.AnimationModule.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UnityEngine.PhysicsModule.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\UnityEngine.CoreModule.h">
+      <Filter>SDK</Filter>
+    </None>
+  </ItemGroup>
+</Project>
