@@ -16,8 +16,6 @@ void Example()
 	if (!naResolverInstance.Setup())
 		printf("Failed to setup NaResolver!\n");
 
-
-
 	FreeConsole();
 	FreeLibraryAndExitThread(module, 0);
 }
