@@ -1458,9 +1458,9 @@ namespace UnityEngine
 	};
 
 	// Name: UnityEngine::Bounds
-// ClassType: ValueType | Normal
-// Flags: Private | Assembly | Famorassem
-// Inheritance: UnityEngine::Bounds -> System::ValueType -> System::Object
+	// ClassType: ValueType | Normal
+	// Flags: Private | Assembly | Famorassem
+	// Inheritance: UnityEngine::Bounds -> System::ValueType -> System::Object
 	class Bounds
 	{
 	public:
@@ -1584,6 +1584,7 @@ namespace UnityEngine
 	};
 
 	class Transform;
+	class Component;
 
 	// Name: UnityEngine::Object
 	// ClassType: Normal
@@ -3429,32 +3430,6 @@ namespace UnityEngine
 	{
 	public:
 		CLASS("UnityEngine.CoreModule", "UnityEngine", "ScriptableObject");
-
-		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Static | Hidebysig
-		// Addresss: 00007FF9BBC3ED90
-		template<typename T>
-		static UnityEngine::ScriptableObject* CreateInstance()
-		{
-			static NaMethodInvoker<UnityEngine::ScriptableObject*, void*> invoker = METHOD_ADDRESS("UnityEngine.ScriptableObject", "CreateInstance", "System.Type");
-			return invoker(T::ThisClass().type.GetObject().object, );
-		}
-
-		// Flags: Private | Assembly | Famorassem | Static | Hidebysig
-		// Addresss: 00007FF9BBC3EE20
-		static void CreateScriptableObject(UnityEngine::ScriptableObject* self)
-		{
-			static NaMethodInvoker<void, UnityEngine::ScriptableObject*> invoker = METHOD_ADDRESS("System.Void", "CreateScriptableObject", "UnityEngine.ScriptableObject");
-			invoker(self);
-		}
-
-		// Flags: Private | Famandassem | Assembly | Famorassem | Public | Static | Hidebysig
-		// Addresss: 00007FF9BBC3EDD0
-		template<typename T>
-		static UnityEngine::ScriptableObject* CreateScriptableObjectInstanceFromType(bool applyDefaultsAndReset)
-		{
-			static NaMethodInvoker<UnityEngine::ScriptableObject*, void*, bool> invoker = METHOD_ADDRESS("UnityEngine.ScriptableObject", "CreateScriptableObjectInstanceFromType", "System.Type", "System.Boolean");
-			return invoker(T::ThisClass().type.GetObject().object, applyDefaultsAndReset);
-		}
 	};
 
 	// Name: UnityEngine::Behaviour
@@ -5170,163 +5145,6 @@ namespace UnityEngine
 		{
 			static NaMethodInvoker<void, UnityEngine::Vector3&> invoker = METHOD_ADDRESS("System.Void", "get_onUnitSphere_Injected", "UnityEngine.Vector3&");
 			invoker(ret);
-		}
-	};
-
-	// Name: UnityEngine::Texture
-	// ClassType: Normal
-	// Flags: Private | Assembly | Famorassem
-	// Inheritance: UnityEngine::Texture -> UnityEngine::Object -> System::Object
-	class Texture : public UnityEngine::Object
-	{
-	public:
-		CLASS("UnityEngine.CoreModule", "UnityEngine", "Texture");
-
-		STATIC_FIELD(int32_t, GenerateAllMips);
-
-
-		// Flags: Private | Assembly | Famorassem | Static | Hidebysig | Specialname
-		// Addresss: 00007FF9BBC2F560
-		static void StaticConstructor()
-		{
-			static NaMethodInvoker<void> invoker = METHOD_ADDRESS("System.Void", "StaticConstructor");
-			invoker();
-		}
-
-		// Flags: Private | Assembly | Famorassem | Hidebysig
-		// Addresss: 00007FF9BBC2F120
-		int32_t GetDataWidth()
-		{
-			static NaMethodInvoker<int32_t, Texture*> invoker = METHOD_ADDRESS("System.Int32", "GetDataWidth");
-			return invoker(this);
-		}
-
-		// Flags: Private | Assembly | Famorassem | Hidebysig
-		// Addresss: 00007FF9BBC2F0E0
-		int32_t GetDataHeight()
-		{
-			static NaMethodInvoker<int32_t, Texture*> invoker = METHOD_ADDRESS("System.Int32", "GetDataHeight");
-			return invoker(this);
-		}
-
-		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Virtual | Hidebysig | Newslot | Specialname
-		// Addresss: 00007FF9BBC2F120
-		int32_t get_width()
-		{
-			static NaMethodInvoker<int32_t, Texture*> invoker = METHOD_ADDRESS("System.Int32", "get_width");
-			return invoker(this);
-		}
-
-		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Virtual | Hidebysig | Newslot | Specialname
-		// Addresss: 00007FF9BBC2F850
-		void set_width(int32_t value)
-		{
-			static NaMethodInvoker<void, Texture*, int32_t> invoker = METHOD_ADDRESS("System.Void", "set_width", "System.Int32");
-			invoker(this, value);
-		}
-
-		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Virtual | Hidebysig | Newslot | Specialname
-		// Addresss: 00007FF9BBC2F0E0
-		int32_t get_height()
-		{
-			static NaMethodInvoker<int32_t, Texture*> invoker = METHOD_ADDRESS("System.Int32", "get_height");
-			return invoker(this);
-		}
-
-		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Virtual | Hidebysig | Newslot | Specialname
-		// Addresss: 00007FF9BBC2F810
-		void set_height(int32_t value)
-		{
-			static NaMethodInvoker<void, Texture*, int32_t> invoker = METHOD_ADDRESS("System.Void", "set_height", "System.Int32");
-			invoker(this, value);
-		}
-
-		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Virtual | Hidebysig | Newslot | Specialname
-		// Addresss: 00007FF9BBC2F670
-		bool get_isReadable()
-		{
-			static NaMethodInvoker<bool, Texture*> invoker = METHOD_ADDRESS("System.Boolean", "get_isReadable");
-			return invoker(this);
-		}
-
-		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig | Specialname
-		// Addresss: 00007FF9BBC2F750
-		UnityEngine::TextureWrapMode get_wrapMode()
-		{
-			static NaMethodInvoker<UnityEngine::TextureWrapMode, Texture*> invoker = METHOD_ADDRESS("UnityEngine.TextureWrapMode", "get_wrapMode");
-			return invoker(this);
-		}
-
-		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig | Specialname
-		// Addresss: 00007FF9BBC2F630
-		UnityEngine::FilterMode get_filterMode()
-		{
-			static NaMethodInvoker<UnityEngine::FilterMode, Texture*> invoker = METHOD_ADDRESS("UnityEngine.FilterMode", "get_filterMode");
-			return invoker(this);
-		}
-
-		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig | Specialname
-		// Addresss: 00007FF9BBC2F7D0
-		void set_filterMode(UnityEngine::FilterMode value)
-		{
-			static NaMethodInvoker<void, Texture*, UnityEngine::FilterMode> invoker = METHOD_ADDRESS("System.Void", "set_filterMode", "UnityEngine.FilterMode");
-			invoker(this, value);
-		}
-
-		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig | Specialname
-		// Addresss: 00007FF9BBC2F790
-		void set_anisoLevel(int32_t value)
-		{
-			static NaMethodInvoker<void, Texture*, int32_t> invoker = METHOD_ADDRESS("System.Void", "set_anisoLevel", "System.Int32");
-			invoker(this, value);
-		}
-
-		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig | Specialname
-		// Addresss: 00007FF9BBC2F700
-		UnityEngine::Vector2 get_texelSize()
-		{
-			static NaMethodInvoker<UnityEngine::Vector2, Texture*> invoker = METHOD_ADDRESS("UnityEngine.Vector2", "get_texelSize");
-			return invoker(this);
-		}
-
-		// Flags: Private | Assembly | Famorassem | Hidebysig
-		// Addresss: 00007FF9BBC2F1C0
-		int32_t Internal_GetActiveTextureColorSpace()
-		{
-			static NaMethodInvoker<int32_t, Texture*> invoker = METHOD_ADDRESS("System.Int32", "Internal_GetActiveTextureColorSpace");
-			return invoker(this);
-		}
-
-		// Flags: Private | Famandassem | Assembly | Famorassem | Public | Hidebysig | Specialname
-		// Addresss: 00007FF9BBC2F5F0
-		UnityEngine::ColorSpace get_activeTextureColorSpace()
-		{
-			static NaMethodInvoker<UnityEngine::ColorSpace, Texture*> invoker = METHOD_ADDRESS("UnityEngine.ColorSpace", "get_activeTextureColorSpace");
-			return invoker(this);
-		}
-
-		// Flags: Private | Famandassem | Assembly | Famorassem | Public | Hidebysig
-		// Addresss: 00007FF9BBC2F1B0
-		UnityEngine::TextureColorSpace GetTextureColorSpace(bool linear)
-		{
-			static NaMethodInvoker<UnityEngine::TextureColorSpace, Texture*, bool> invoker = METHOD_ADDRESS("UnityEngine.TextureColorSpace", "GetTextureColorSpace", "System.Boolean");
-			return invoker(this, linear);
-		}
-
-		// Flags: Private | Famandassem | Assembly | Famorassem | Public | Hidebysig
-		// Addresss: 00007FF9BBC2F3C0
-		bool ValidateFormat(UnityEngine::TextureFormat format)
-		{
-			static NaMethodInvoker<bool, Texture*, UnityEngine::TextureFormat> invoker = METHOD_ADDRESS("System.Boolean", "ValidateFormat", "UnityEngine.TextureFormat");
-			return invoker(this, format);
-		}
-
-		// Flags: Private | Assembly | Famorassem | Hidebysig | Specialname
-		// Addresss: 00007FF9BBC2F6B0
-		void get_texelSize_Injected(UnityEngine::Vector2& ret)
-		{
-			static NaMethodInvoker<void, Texture*, UnityEngine::Vector2&> invoker = METHOD_ADDRESS("System.Void", "get_texelSize_Injected", "UnityEngine.Vector2&");
-			invoker(this, ret);
 		}
 	};
 
