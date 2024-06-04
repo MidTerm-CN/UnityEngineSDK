@@ -147,6 +147,7 @@
     <ClInclude Include="..\NaResolver\NaResolver.h" />
     <ClInclude Include="..\UnityEngine.AnimationModule.h" />
     <ClInclude Include="..\UnityEngine.PhysicsModule.h" />
+    <ClInclude Include="..\UnityEngine.UI.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />

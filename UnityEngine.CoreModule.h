@@ -2,6 +2,158 @@
 
 namespace UnityEngine
 {
+	namespace Experimental
+	{
+		namespace Rendering
+		{
+			// Name: UnityEngine::Experimental::Rendering::GraphicsFormat
+			// Flags: Private | Assembly | Famorassem
+			enum class GraphicsFormat
+			{
+				None = 0,
+				R8_SRGB = 1,
+				R8G8_SRGB = 2,
+				R8G8B8_SRGB = 3,
+				R8G8B8A8_SRGB = 4,
+				R8_UNorm = 5,
+				R8G8_UNorm = 6,
+				R8G8B8_UNorm = 7,
+				R8G8B8A8_UNorm = 8,
+				R8_SNorm = 9,
+				R8G8_SNorm = 10,
+				R8G8B8_SNorm = 11,
+				R8G8B8A8_SNorm = 12,
+				R8_UInt = 13,
+				R8G8_UInt = 14,
+				R8G8B8_UInt = 15,
+				R8G8B8A8_UInt = 16,
+				R8_SInt = 17,
+				R8G8_SInt = 18,
+				R8G8B8_SInt = 19,
+				R8G8B8A8_SInt = 20,
+				R16_UNorm = 21,
+				R16G16_UNorm = 22,
+				R16G16B16_UNorm = 23,
+				R16G16B16A16_UNorm = 24,
+				R16_SNorm = 25,
+				R16G16_SNorm = 26,
+				R16G16B16_SNorm = 27,
+				R16G16B16A16_SNorm = 28,
+				R16_UInt = 29,
+				R16G16_UInt = 30,
+				R16G16B16_UInt = 31,
+				R16G16B16A16_UInt = 32,
+				R16_SInt = 33,
+				R16G16_SInt = 34,
+				R16G16B16_SInt = 35,
+				R16G16B16A16_SInt = 36,
+				R32_UInt = 37,
+				R32G32_UInt = 38,
+				R32G32B32_UInt = 39,
+				R32G32B32A32_UInt = 40,
+				R32_SInt = 41,
+				R32G32_SInt = 42,
+				R32G32B32_SInt = 43,
+				R32G32B32A32_SInt = 44,
+				R16_SFloat = 45,
+				R16G16_SFloat = 46,
+				R16G16B16_SFloat = 47,
+				R16G16B16A16_SFloat = 48,
+				R32_SFloat = 49,
+				R32G32_SFloat = 50,
+				R32G32B32_SFloat = 51,
+				R32G32B32A32_SFloat = 52,
+				B8G8R8_SRGB = 56,
+				B8G8R8A8_SRGB = 57,
+				B8G8R8_UNorm = 58,
+				B8G8R8A8_UNorm = 59,
+				B8G8R8_SNorm = 60,
+				B8G8R8A8_SNorm = 61,
+				B8G8R8_UInt = 62,
+				B8G8R8A8_UInt = 63,
+				B8G8R8_SInt = 64,
+				B8G8R8A8_SInt = 65,
+				R4G4B4A4_UNormPack16 = 66,
+				B4G4R4A4_UNormPack16 = 67,
+				R5G6B5_UNormPack16 = 68,
+				B5G6R5_UNormPack16 = 69,
+				R5G5B5A1_UNormPack16 = 70,
+				B5G5R5A1_UNormPack16 = 71,
+				A1R5G5B5_UNormPack16 = 72,
+				E5B9G9R9_UFloatPack32 = 73,
+				B10G11R11_UFloatPack32 = 74,
+				A2B10G10R10_UNormPack32 = 75,
+				A2B10G10R10_UIntPack32 = 76,
+				A2B10G10R10_SIntPack32 = 77,
+				A2R10G10B10_UNormPack32 = 78,
+				A2R10G10B10_UIntPack32 = 79,
+				A2R10G10B10_SIntPack32 = 80,
+				A2R10G10B10_XRSRGBPack32 = 81,
+				A2R10G10B10_XRUNormPack32 = 82,
+				R10G10B10_XRSRGBPack32 = 83,
+				R10G10B10_XRUNormPack32 = 84,
+				A10R10G10B10_XRSRGBPack32 = 85,
+				A10R10G10B10_XRUNormPack32 = 86,
+				RGB_DXT1_SRGB = 96,
+				RGBA_DXT1_SRGB = 96,
+				RGB_DXT1_UNorm = 97,
+				RGBA_DXT1_UNorm = 97,
+				RGBA_DXT3_SRGB = 98,
+				RGBA_DXT3_UNorm = 99,
+				RGBA_DXT5_SRGB = 100,
+				RGBA_DXT5_UNorm = 101,
+				R_BC4_UNorm = 102,
+				R_BC4_SNorm = 103,
+				RG_BC5_UNorm = 104,
+				RG_BC5_SNorm = 105,
+				RGB_BC6H_UFloat = 106,
+				RGB_BC6H_SFloat = 107,
+				RGBA_BC7_SRGB = 108,
+				RGBA_BC7_UNorm = 109,
+				RGB_PVRTC_2Bpp_SRGB = 110,
+				RGB_PVRTC_2Bpp_UNorm = 111,
+				RGB_PVRTC_4Bpp_SRGB = 112,
+				RGB_PVRTC_4Bpp_UNorm = 113,
+				RGBA_PVRTC_2Bpp_SRGB = 114,
+				RGBA_PVRTC_2Bpp_UNorm = 115,
+				RGBA_PVRTC_4Bpp_SRGB = 116,
+				RGBA_PVRTC_4Bpp_UNorm = 117,
+				RGB_ETC_UNorm = 118,
+				RGB_ETC2_SRGB = 119,
+				RGB_ETC2_UNorm = 120,
+				RGB_A1_ETC2_SRGB = 121,
+				RGB_A1_ETC2_UNorm = 122,
+				RGBA_ETC2_SRGB = 123,
+				RGBA_ETC2_UNorm = 124,
+				R_EAC_UNorm = 125,
+				R_EAC_SNorm = 126,
+				RG_EAC_UNorm = 127,
+				RG_EAC_SNorm = 128,
+				RGBA_ASTC4X4_SRGB = 129,
+				RGBA_ASTC4X4_UNorm = 130,
+				RGBA_ASTC5X5_SRGB = 131,
+				RGBA_ASTC5X5_UNorm = 132,
+				RGBA_ASTC6X6_SRGB = 133,
+				RGBA_ASTC6X6_UNorm = 134,
+				RGBA_ASTC8X8_SRGB = 135,
+				RGBA_ASTC8X8_UNorm = 136,
+				RGBA_ASTC10X10_SRGB = 137,
+				RGBA_ASTC10X10_UNorm = 138,
+				RGBA_ASTC12X12_SRGB = 139,
+				RGBA_ASTC12X12_UNorm = 140,
+			};
+
+			// Name: UnityEngine::Experimental::Rendering::TextureCreationFlags
+			// Flags: Private | Assembly | Famorassem
+			enum class TextureCreationFlags
+			{
+				None = 0,
+				MipChain = 1,
+				Crunch = 64,
+			};
+		}
+	}
+
 	// Name: UnityEngine::ApplicationMemoryUsage
 	// Flags: Private | Assembly | Famorassem
 	enum class ApplicationMemoryUsage
@@ -5157,20 +5309,32 @@ namespace UnityEngine
 	public:
 		CLASS("UnityEngine.CoreModule", "UnityEngine", "Texture2D");
 
-		STATIC_FIELD(int32_t, streamingMipmapsPriorityMin);
-		STATIC_FIELD(int32_t, streamingMipmapsPriorityMax);
-
-
 		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Static | Hidebysig | Specialname
-		// Addresss: 00007FF9BBC2E580
+		// Addresss: 00007FFA430E74A0
 		static UnityEngine::Texture2D* get_whiteTexture()
 		{
 			static NaMethodInvoker<UnityEngine::Texture2D*> invoker = METHOD_ADDRESS("UnityEngine.Texture2D", "get_whiteTexture");
 			return invoker();
 		}
 
+		// Flags: Private | Assembly | Famorassem | Static | Hidebysig
+		// Addresss: 00007FFA430E67C0
+		static bool Internal_CreateImpl(UnityEngine::Texture2D* mono, int32_t w, int32_t h, int32_t mipCount, UnityEngine::Experimental::Rendering::GraphicsFormat format, UnityEngine::Experimental::Rendering::TextureCreationFlags flags, intptr_t nativeTex)
+		{
+			static NaMethodInvoker<bool, UnityEngine::Texture2D*, int32_t, int32_t, int32_t, UnityEngine::Experimental::Rendering::GraphicsFormat, UnityEngine::Experimental::Rendering::TextureCreationFlags, intptr_t> invoker = METHOD_ADDRESS("System.Boolean", "Internal_CreateImpl", "UnityEngine.Texture2D", "System.Int32", "System.Int32", "System.Int32", "UnityEngine.Experimental.Rendering.GraphicsFormat", "UnityEngine.Experimental.Rendering.TextureCreationFlags", "System.IntPtr");
+			return invoker(mono, w, h, mipCount, format, flags, nativeTex);
+		}
+
+		// Flags: Private | Assembly | Famorassem | Static | Hidebysig
+		// Addresss: 00007FFA430E6820
+		static void Internal_Create(UnityEngine::Texture2D* mono, int32_t w, int32_t h, int32_t mipCount, UnityEngine::Experimental::Rendering::GraphicsFormat format, UnityEngine::Experimental::Rendering::TextureCreationFlags flags, intptr_t nativeTex)
+		{
+			static NaMethodInvoker<void, UnityEngine::Texture2D*, int32_t, int32_t, int32_t, UnityEngine::Experimental::Rendering::GraphicsFormat, UnityEngine::Experimental::Rendering::TextureCreationFlags, intptr_t> invoker = METHOD_ADDRESS("System.Void", "Internal_Create", "UnityEngine.Texture2D", "System.Int32", "System.Int32", "System.Int32", "UnityEngine.Experimental.Rendering.GraphicsFormat", "UnityEngine.Experimental.Rendering.TextureCreationFlags", "System.IntPtr");
+			invoker(mono, w, h, mipCount, format, flags, nativeTex);
+		}
+
 		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig | Specialname
-		// Addresss: 00007FF9BBC2E500
+		// Addresss: 00007FFA430E7420
 		UnityEngine::TextureFormat get_format()
 		{
 			static NaMethodInvoker<UnityEngine::TextureFormat, Texture2D*> invoker = METHOD_ADDRESS("UnityEngine.TextureFormat", "get_format");
@@ -5178,7 +5342,7 @@ namespace UnityEngine
 		}
 
 		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Virtual | Hidebysig | Specialname
-		// Addresss: 00007FF9BBC2E540
+		// Addresss: 00007FFA430E7460
 		bool get_isReadable()
 		{
 			static NaMethodInvoker<bool, Texture2D*> invoker = METHOD_ADDRESS("System.Boolean", "get_isReadable");
@@ -5186,7 +5350,7 @@ namespace UnityEngine
 		}
 
 		// Flags: Private | Assembly | Famorassem | Hidebysig
-		// Addresss: 00007FF9BBC2CA60
+		// Addresss: 00007FFA430E6420
 		void ApplyImpl(bool updateMipmaps, bool makeNoLongerReadable)
 		{
 			static NaMethodInvoker<void, Texture2D*, bool, bool> invoker = METHOD_ADDRESS("System.Void", "ApplyImpl", "System.Boolean", "System.Boolean");
@@ -5194,47 +5358,39 @@ namespace UnityEngine
 		}
 
 		// Flags: Private | Assembly | Famorassem | Hidebysig
-		// Addresss: 00007FF9BBC2D370
-		bool ReinitializeImpl(int32_t width, int32_t height)
+		// Addresss: 00007FFA430E6B70
+		bool ResizeImpl(int32_t width, int32_t height)
 		{
-			static NaMethodInvoker<bool, Texture2D*, int32_t, int32_t> invoker = METHOD_ADDRESS("System.Boolean", "ReinitializeImpl", "System.Int32", "System.Int32");
+			static NaMethodInvoker<bool, Texture2D*, int32_t, int32_t> invoker = METHOD_ADDRESS("System.Boolean", "ResizeImpl", "System.Int32", "System.Int32");
 			return invoker(this, width, height);
 		}
 
 		// Flags: Private | Assembly | Famorassem | Hidebysig
-		// Addresss: 00007FF9BBC2D660
-		void SetPixelImpl(int32_t image, int32_t mip, int32_t x, int32_t y, UnityEngine::Color color)
+		// Addresss: 00007FFA430E6E00
+		void SetPixelImpl(int32_t image, int32_t x, int32_t y, UnityEngine::Color color)
 		{
-			static NaMethodInvoker<void, Texture2D*, int32_t, int32_t, int32_t, int32_t, UnityEngine::Color> invoker = METHOD_ADDRESS("System.Void", "SetPixelImpl", "System.Int32", "System.Int32", "System.Int32", "System.Int32", "UnityEngine.Color");
-			invoker(this, image, mip, x, y, color);
+			static NaMethodInvoker<void, Texture2D*, int32_t, int32_t, int32_t, UnityEngine::Color> invoker = METHOD_ADDRESS("System.Void", "SetPixelImpl", "System.Int32", "System.Int32", "System.Int32", "UnityEngine.Color");
+			invoker(this, image, x, y, color);
 		}
 
 		// Flags: Private | Assembly | Famorassem | Hidebysig
-		// Addresss: 00007FF9BBC2CDF0
-		UnityEngine::Color GetPixelImpl(int32_t image, int32_t mip, int32_t x, int32_t y)
+		// Addresss: 00007FFA430E6620
+		UnityEngine::Color GetPixelBilinearImpl(int32_t image, float u, float v)
 		{
-			static NaMethodInvoker<UnityEngine::Color, Texture2D*, int32_t, int32_t, int32_t, int32_t> invoker = METHOD_ADDRESS("UnityEngine.Color", "GetPixelImpl", "System.Int32", "System.Int32", "System.Int32", "System.Int32");
-			return invoker(this, image, mip, x, y);
+			static NaMethodInvoker<UnityEngine::Color, Texture2D*, int32_t, float, float> invoker = METHOD_ADDRESS("UnityEngine.Color", "GetPixelBilinearImpl", "System.Int32", "System.Single", "System.Single");
+			return invoker(this, image, u, v);
 		}
 
 		// Flags: Private | Assembly | Famorassem | Hidebysig
-		// Addresss: 00007FF9BBC2CC40
-		UnityEngine::Color GetPixelBilinearImpl(int32_t image, int32_t mip, float u, float v)
+		// Addresss: 00007FFA430E6BC0
+		bool ResizeWithFormatImpl(int32_t width, int32_t height, UnityEngine::TextureFormat format, bool hasMipMap)
 		{
-			static NaMethodInvoker<UnityEngine::Color, Texture2D*, int32_t, int32_t, float, float> invoker = METHOD_ADDRESS("UnityEngine.Color", "GetPixelBilinearImpl", "System.Int32", "System.Int32", "System.Single", "System.Single");
-			return invoker(this, image, mip, u, v);
+			static NaMethodInvoker<bool, Texture2D*, int32_t, int32_t, UnityEngine::TextureFormat, bool> invoker = METHOD_ADDRESS("System.Boolean", "ResizeWithFormatImpl", "System.Int32", "System.Int32", "UnityEngine.TextureFormat", "System.Boolean");
+			return invoker(this, width, height, format, hasMipMap);
 		}
 
 		// Flags: Private | Assembly | Famorassem | Hidebysig
-		// Addresss: 00007FF9BBC2D3C0
-		bool ReinitializeWithTextureFormatImpl(int32_t width, int32_t height, UnityEngine::TextureFormat textureFormat, bool hasMipMap)
-		{
-			static NaMethodInvoker<bool, Texture2D*, int32_t, int32_t, UnityEngine::TextureFormat, bool> invoker = METHOD_ADDRESS("System.Boolean", "ReinitializeWithTextureFormatImpl", "System.Int32", "System.Int32", "UnityEngine.TextureFormat", "System.Boolean");
-			return invoker(this, width, height, textureFormat, hasMipMap);
-		}
-
-		// Flags: Private | Assembly | Famorassem | Hidebysig
-		// Addresss: 00007FF9BBC2D180
+		// Addresss: 00007FFA430E6960
 		void ReadPixelsImpl(UnityEngine::Rect source, int32_t destX, int32_t destY, bool recalculateMipMaps)
 		{
 			static NaMethodInvoker<void, Texture2D*, UnityEngine::Rect, int32_t, int32_t, bool> invoker = METHOD_ADDRESS("System.Void", "ReadPixelsImpl", "UnityEngine.Rect", "System.Int32", "System.Int32", "System.Boolean");
@@ -5242,47 +5398,23 @@ namespace UnityEngine
 		}
 
 		// Flags: Private | Assembly | Famorassem | Hidebysig
-		// Addresss: 00007FF9BBC2D7F0
+		// Addresss: 00007FFA430E6F40
 		void SetPixelsImpl(int32_t x, int32_t y, int32_t w, int32_t h, Array<UnityEngine::Color>* pixel, int32_t miplevel, int32_t frame)
 		{
 			static NaMethodInvoker<void, Texture2D*, int32_t, int32_t, int32_t, int32_t, Array<UnityEngine::Color>*, int32_t, int32_t> invoker = METHOD_ADDRESS("System.Void", "SetPixelsImpl", "System.Int32", "System.Int32", "System.Int32", "System.Int32", "UnityEngine.Color[]", "System.Int32", "System.Int32");
 			invoker(this, x, y, w, h, pixel, miplevel, frame);
 		}
 
-		// Flags: Private | Assembly | Famorassem | Hidebysig
-		// Addresss: 00007FF9BBC2CF80
-		intptr_t GetWritableImageData(int32_t frame)
+		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig
+		// Addresss: 00007FFA430E6780
+		Array<uint8_t>* GetRawTextureData()
 		{
-			static NaMethodInvoker<intptr_t, Texture2D*, int32_t> invoker = METHOD_ADDRESS("System.IntPtr", "GetWritableImageData", "System.Int32");
-			return invoker(this, frame);
-		}
-
-		// Flags: Private | Assembly | Famorassem | Hidebysig
-		// Addresss: 00007FF9BBC2CF40
-		uint64_t GetRawImageDataSize()
-		{
-			static NaMethodInvoker<uint64_t, Texture2D*> invoker = METHOD_ADDRESS("System.UInt64", "GetRawImageDataSize");
+			static NaMethodInvoker<Array<uint8_t>*, Texture2D*> invoker = METHOD_ADDRESS("System.Byte[]", "GetRawTextureData");
 			return invoker(this);
 		}
 
-		// Flags: Private | Assembly | Famorassem | Hidebysig
-		// Addresss: 00007FF9BBC2D5A0
-		void SetAllPixels32(Array<UnityEngine::Color32>* colors, int32_t miplevel)
-		{
-			static NaMethodInvoker<void, Texture2D*, Array<UnityEngine::Color32>*, int32_t> invoker = METHOD_ADDRESS("System.Void", "SetAllPixels32", "UnityEngine.Color32[]", "System.Int32");
-			invoker(this, colors, miplevel);
-		}
-
-		// Flags: Private | Famandassem | Assembly | Famorassem | Public | Hidebysig
-		// Addresss: 00007FF9BBC2DB50
-		bool ValidateFormat(UnityEngine::TextureFormat format, int32_t width, int32_t height)
-		{
-			static NaMethodInvoker<bool, Texture2D*, UnityEngine::TextureFormat, int32_t, int32_t> invoker = METHOD_ADDRESS("System.Boolean", "ValidateFormat", "UnityEngine.TextureFormat", "System.Int32", "System.Int32");
-			return invoker(this, format, width, height);
-		}
-
 		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig
-		// Addresss: 00007FF9BBC2D6E0
+		// Addresss: 00007FFA430E6E70
 		void SetPixel(int32_t x, int32_t y, UnityEngine::Color color)
 		{
 			static NaMethodInvoker<void, Texture2D*, int32_t, int32_t, UnityEngine::Color> invoker = METHOD_ADDRESS("System.Void", "SetPixel", "System.Int32", "System.Int32", "UnityEngine.Color");
@@ -5290,7 +5422,7 @@ namespace UnityEngine
 		}
 
 		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig
-		// Addresss: 00007FF9BBC2D850
+		// Addresss: 00007FFA430E6FA0
 		void SetPixels(int32_t x, int32_t y, int32_t blockWidth, int32_t blockHeight, Array<UnityEngine::Color>* colors, int32_t miplevel)
 		{
 			static NaMethodInvoker<void, Texture2D*, int32_t, int32_t, int32_t, int32_t, Array<UnityEngine::Color>*, int32_t> invoker = METHOD_ADDRESS("System.Void", "SetPixels", "System.Int32", "System.Int32", "System.Int32", "System.Int32", "UnityEngine.Color[]", "System.Int32");
@@ -5298,23 +5430,15 @@ namespace UnityEngine
 		}
 
 		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig
-		// Addresss: 00007FF9BBC2D900
-		void SetPixels(Array<UnityEngine::Color>* colors, int32_t miplevel)
+		// Addresss: 00007FFA430E7060
+		void SetPixels(Array<UnityEngine::Color>* colors)
 		{
-			static NaMethodInvoker<void, Texture2D*, Array<UnityEngine::Color>*, int32_t> invoker = METHOD_ADDRESS("System.Void", "SetPixels", "UnityEngine.Color[]", "System.Int32");
-			invoker(this, colors, miplevel);
+			static NaMethodInvoker<void, Texture2D*, Array<UnityEngine::Color>*> invoker = METHOD_ADDRESS("System.Void", "SetPixels", "UnityEngine.Color[]");
+			invoker(this, colors);
 		}
 
 		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig
-		// Addresss: 00007FF9BBC2CE70
-		UnityEngine::Color GetPixel(int32_t x, int32_t y)
-		{
-			static NaMethodInvoker<UnityEngine::Color, Texture2D*, int32_t, int32_t> invoker = METHOD_ADDRESS("UnityEngine.Color", "GetPixel", "System.Int32", "System.Int32");
-			return invoker(this, x, y);
-		}
-
-		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig
-		// Addresss: 00007FF9BBC2CCC0
+		// Addresss: 00007FFA430E66A0
 		UnityEngine::Color GetPixelBilinear(float u, float v)
 		{
 			static NaMethodInvoker<UnityEngine::Color, Texture2D*, float, float> invoker = METHOD_ADDRESS("UnityEngine.Color", "GetPixelBilinear", "System.Single", "System.Single");
@@ -5322,7 +5446,7 @@ namespace UnityEngine
 		}
 
 		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig
-		// Addresss: 00007FF9BBC2CAC0
+		// Addresss: 00007FFA430E6510
 		void Apply(bool updateMipmaps, bool makeNoLongerReadable)
 		{
 			static NaMethodInvoker<void, Texture2D*, bool, bool> invoker = METHOD_ADDRESS("System.Void", "Apply", "System.Boolean", "System.Boolean");
@@ -5330,7 +5454,7 @@ namespace UnityEngine
 		}
 
 		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig
-		// Addresss: 00007FF9BBC2CB60
+		// Addresss: 00007FFA430E6480
 		void Apply()
 		{
 			static NaMethodInvoker<void, Texture2D*> invoker = METHOD_ADDRESS("System.Void", "Apply");
@@ -5338,23 +5462,7 @@ namespace UnityEngine
 		}
 
 		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig
-		// Addresss: 00007FF9BBC2D430
-		bool Reinitialize(int32_t width, int32_t height)
-		{
-			static NaMethodInvoker<bool, Texture2D*, int32_t, int32_t> invoker = METHOD_ADDRESS("System.Boolean", "Reinitialize", "System.Int32", "System.Int32");
-			return invoker(this, width, height);
-		}
-
-		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig
-		// Addresss: 00007FF9BBC2D4C0
-		bool Reinitialize(int32_t width, int32_t height, UnityEngine::TextureFormat format, bool hasMipMap)
-		{
-			static NaMethodInvoker<bool, Texture2D*, int32_t, int32_t, UnityEngine::TextureFormat, bool> invoker = METHOD_ADDRESS("System.Boolean", "Reinitialize", "System.Int32", "System.Int32", "UnityEngine.TextureFormat", "System.Boolean");
-			return invoker(this, width, height, format, hasMipMap);
-		}
-
-		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig
-		// Addresss: 00007FF9BBC2D430
+		// Addresss: 00007FFA430E6CF0
 		bool Resize(int32_t width, int32_t height)
 		{
 			static NaMethodInvoker<bool, Texture2D*, int32_t, int32_t> invoker = METHOD_ADDRESS("System.Boolean", "Resize", "System.Int32", "System.Int32");
@@ -5362,7 +5470,7 @@ namespace UnityEngine
 		}
 
 		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig
-		// Addresss: 00007FF9BBC2D530
+		// Addresss: 00007FFA430E6C30
 		bool Resize(int32_t width, int32_t height, UnityEngine::TextureFormat format, bool hasMipMap)
 		{
 			static NaMethodInvoker<bool, Texture2D*, int32_t, int32_t, UnityEngine::TextureFormat, bool> invoker = METHOD_ADDRESS("System.Boolean", "Resize", "System.Int32", "System.Int32", "UnityEngine.TextureFormat", "System.Boolean");
@@ -5370,7 +5478,7 @@ namespace UnityEngine
 		}
 
 		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig
-		// Addresss: 00007FF9BBC2D2B0
+		// Addresss: 00007FFA430E6AA0
 		void ReadPixels(UnityEngine::Rect source, int32_t destX, int32_t destY, bool recalculateMipMaps)
 		{
 			static NaMethodInvoker<void, Texture2D*, UnityEngine::Rect, int32_t, int32_t, bool> invoker = METHOD_ADDRESS("System.Void", "ReadPixels", "UnityEngine.Rect", "System.Int32", "System.Int32", "System.Boolean");
@@ -5378,55 +5486,31 @@ namespace UnityEngine
 		}
 
 		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig
-		// Addresss: 00007FF9BBC2D1F0
+		// Addresss: 00007FFA430E69D0
 		void ReadPixels(UnityEngine::Rect source, int32_t destX, int32_t destY)
 		{
 			static NaMethodInvoker<void, Texture2D*, UnityEngine::Rect, int32_t, int32_t> invoker = METHOD_ADDRESS("System.Void", "ReadPixels", "UnityEngine.Rect", "System.Int32", "System.Int32");
 			invoker(this, source, destX, destY);
 		}
 
-		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig
-		// Addresss: 00007FF9BBC2D5A0
-		void SetPixels32(Array<UnityEngine::Color32>* colors, int32_t miplevel)
+		// Flags: Private | Assembly | Famorassem | Hidebysig
+		// Addresss: 00007FFA430E6DA0
+		void SetPixelImpl_Injected(int32_t image, int32_t x, int32_t y, UnityEngine::Color& color)
 		{
-			static NaMethodInvoker<void, Texture2D*, Array<UnityEngine::Color32>*, int32_t> invoker = METHOD_ADDRESS("System.Void", "SetPixels32", "UnityEngine.Color32[]", "System.Int32");
-			invoker(this, colors, miplevel);
-		}
-
-		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig
-		// Addresss: 00007FF9BBC2D7A0
-		void SetPixels32(Array<UnityEngine::Color32>* colors)
-		{
-			static NaMethodInvoker<void, Texture2D*, Array<UnityEngine::Color32>*> invoker = METHOD_ADDRESS("System.Void", "SetPixels32", "UnityEngine.Color32[]");
-			invoker(this, colors);
+			static NaMethodInvoker<void, Texture2D*, int32_t, int32_t, int32_t, UnityEngine::Color&> invoker = METHOD_ADDRESS("System.Void", "SetPixelImpl_Injected", "System.Int32", "System.Int32", "System.Int32", "UnityEngine.Color&");
+			invoker(this, image, x, y, color);
 		}
 
 		// Flags: Private | Assembly | Famorassem | Hidebysig
-		// Addresss: 00007FF9BBC2D600
-		void SetPixelImpl_Injected(int32_t image, int32_t mip, int32_t x, int32_t y, UnityEngine::Color& color)
+		// Addresss: 00007FFA430E65C0
+		void GetPixelBilinearImpl_Injected(int32_t image, float u, float v, UnityEngine::Color& ret)
 		{
-			static NaMethodInvoker<void, Texture2D*, int32_t, int32_t, int32_t, int32_t, UnityEngine::Color&> invoker = METHOD_ADDRESS("System.Void", "SetPixelImpl_Injected", "System.Int32", "System.Int32", "System.Int32", "System.Int32", "UnityEngine.Color&");
-			invoker(this, image, mip, x, y, color);
+			static NaMethodInvoker<void, Texture2D*, int32_t, float, float, UnityEngine::Color&> invoker = METHOD_ADDRESS("System.Void", "GetPixelBilinearImpl_Injected", "System.Int32", "System.Single", "System.Single", "UnityEngine.Color&");
+			invoker(this, image, u, v, ret);
 		}
 
 		// Flags: Private | Assembly | Famorassem | Hidebysig
-		// Addresss: 00007FF9BBC2CD90
-		void GetPixelImpl_Injected(int32_t image, int32_t mip, int32_t x, int32_t y, UnityEngine::Color& ret)
-		{
-			static NaMethodInvoker<void, Texture2D*, int32_t, int32_t, int32_t, int32_t, UnityEngine::Color&> invoker = METHOD_ADDRESS("System.Void", "GetPixelImpl_Injected", "System.Int32", "System.Int32", "System.Int32", "System.Int32", "UnityEngine.Color&");
-			invoker(this, image, mip, x, y, ret);
-		}
-
-		// Flags: Private | Assembly | Famorassem | Hidebysig
-		// Addresss: 00007FF9BBC2CBE0
-		void GetPixelBilinearImpl_Injected(int32_t image, int32_t mip, float u, float v, UnityEngine::Color& ret)
-		{
-			static NaMethodInvoker<void, Texture2D*, int32_t, int32_t, float, float, UnityEngine::Color&> invoker = METHOD_ADDRESS("System.Void", "GetPixelBilinearImpl_Injected", "System.Int32", "System.Int32", "System.Single", "System.Single", "UnityEngine.Color&");
-			invoker(this, image, mip, u, v, ret);
-		}
-
-		// Flags: Private | Assembly | Famorassem | Hidebysig
-		// Addresss: 00007FF9BBC2D110
+		// Addresss: 00007FFA430E68F0
 		void ReadPixelsImpl_Injected(UnityEngine::Rect& source, int32_t destX, int32_t destY, bool recalculateMipMaps)
 		{
 			static NaMethodInvoker<void, Texture2D*, UnityEngine::Rect&, int32_t, int32_t, bool> invoker = METHOD_ADDRESS("System.Void", "ReadPixelsImpl_Injected", "UnityEngine.Rect&", "System.Int32", "System.Int32", "System.Boolean");
@@ -6331,6 +6415,160 @@ namespace UnityEngine
 		{
 			static NaMethodInvoker<void, UnityEngine::Rect&> invoker = METHOD_ADDRESS("System.Void", "Viewport_Injected", "UnityEngine.Rect&");
 			invoker(pixelRect);
+		}
+	};
+
+	// Name: UnityEngine::Sprite
+	// ClassType: Normal
+	// Flags: Private | Assembly | Famorassem
+	// Inheritance: UnityEngine::Sprite -> UnityEngine::Object -> System::Object
+	class Sprite : public UnityEngine::Object
+	{
+	public:
+		CLASS("UnityEngine.CoreModule", "UnityEngine", "Sprite");
+
+		// Flags: Private | Famandassem | Assembly | Famorassem | Public | Hidebysig
+		// Addresss: 00007FFA42DF1FE0
+		int32_t GetPackingMode()
+		{
+			static NaMethodInvoker<int32_t, Sprite*> invoker = METHOD_ADDRESS("System.Int32", "GetPackingMode");
+			return invoker(this);
+		}
+
+		// Flags: Private | Famandassem | Assembly | Famorassem | Public | Hidebysig
+		// Addresss: 00007FFA42DF1FA0
+		int32_t GetPacked()
+		{
+			static NaMethodInvoker<int32_t, Sprite*> invoker = METHOD_ADDRESS("System.Int32", "GetPacked");
+			return invoker(this);
+		}
+
+		// Flags: Private | Famandassem | Assembly | Famorassem | Public | Hidebysig
+		// Addresss: 00007FFA42DF2110
+		UnityEngine::Rect GetTextureRect()
+		{
+			static NaMethodInvoker<UnityEngine::Rect, Sprite*> invoker = METHOD_ADDRESS("UnityEngine.Rect", "GetTextureRect");
+			return invoker(this);
+		}
+
+		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig | Specialname
+		// Addresss: 00007FFA42DF22F0
+		UnityEngine::Bounds get_bounds()
+		{
+			static NaMethodInvoker<UnityEngine::Bounds, Sprite*> invoker = METHOD_ADDRESS("UnityEngine.Bounds", "get_bounds");
+			return invoker(this);
+		}
+
+		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig | Specialname
+		// Addresss: 00007FFA42DF24C0
+		UnityEngine::Rect get_rect()
+		{
+			static NaMethodInvoker<UnityEngine::Rect, Sprite*> invoker = METHOD_ADDRESS("UnityEngine.Rect", "get_rect");
+			return invoker(this);
+		}
+
+		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig | Specialname
+		// Addresss: 00007FFA42DF25E0
+		UnityEngine::Texture2D* get_texture()
+		{
+			static NaMethodInvoker<UnityEngine::Texture2D*, Sprite*> invoker = METHOD_ADDRESS("UnityEngine.Texture2D", "get_texture");
+			return invoker(this);
+		}
+
+		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig | Specialname
+		// Addresss: 00007FFA42DF2430
+		float get_pixelsPerUnit()
+		{
+			static NaMethodInvoker<float, Sprite*> invoker = METHOD_ADDRESS("System.Single", "get_pixelsPerUnit");
+			return invoker(this);
+		}
+
+		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig | Specialname
+		// Addresss: 00007FFA42DF21C0
+		UnityEngine::Texture2D* get_associatedAlphaSplitTexture()
+		{
+			static NaMethodInvoker<UnityEngine::Texture2D*, Sprite*> invoker = METHOD_ADDRESS("UnityEngine.Texture2D", "get_associatedAlphaSplitTexture");
+			return invoker(this);
+		}
+
+		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig | Specialname
+		// Addresss: 00007FFA42DF23E0
+		UnityEngine::Vector2 get_pivot()
+		{
+			static NaMethodInvoker<UnityEngine::Vector2, Sprite*> invoker = METHOD_ADDRESS("UnityEngine.Vector2", "get_pivot");
+			return invoker(this);
+		}
+
+		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig | Specialname
+		// Addresss: 00007FFA42DF2350
+		bool get_packed()
+		{
+			static NaMethodInvoker<bool, Sprite*> invoker = METHOD_ADDRESS("System.Boolean", "get_packed");
+			return invoker(this);
+		}
+
+		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig | Specialname
+		// Addresss: 00007FFA42DF2510
+		UnityEngine::Rect get_textureRect()
+		{
+			static NaMethodInvoker<UnityEngine::Rect, Sprite*> invoker = METHOD_ADDRESS("UnityEngine.Rect", "get_textureRect");
+			return invoker(this);
+		}
+
+		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig | Specialname
+		// Addresss: 00007FFA42DF26A0
+		Array<UnityEngine::Vector2>* get_vertices()
+		{
+			static NaMethodInvoker<Array<UnityEngine::Vector2>*, Sprite*> invoker = METHOD_ADDRESS("UnityEngine.Vector2[]", "get_vertices");
+			return invoker(this);
+		}
+
+		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig | Specialname
+		// Addresss: 00007FFA42DF2620
+		Array<uint16_t>* get_triangles()
+		{
+			static NaMethodInvoker<Array<uint16_t>*, Sprite*> invoker = METHOD_ADDRESS("System.UInt16[]", "get_triangles");
+			return invoker(this);
+		}
+
+		// Flags: Famandassem | Assembly | Family | Famorassem | Public | Hidebysig | Specialname
+		// Addresss: 00007FFA42DF2660
+		Array<UnityEngine::Vector2>* get_uv()
+		{
+			static NaMethodInvoker<Array<UnityEngine::Vector2>*, Sprite*> invoker = METHOD_ADDRESS("UnityEngine.Vector2[]", "get_uv");
+			return invoker(this);
+		}
+
+		// Flags: Private | Assembly | Famorassem | Hidebysig
+		// Addresss: 00007FFA42DF20C0
+		void GetTextureRect_Injected(UnityEngine::Rect& ret)
+		{
+			static NaMethodInvoker<void, Sprite*, UnityEngine::Rect&> invoker = METHOD_ADDRESS("System.Void", "GetTextureRect_Injected", "UnityEngine.Rect&");
+			invoker(this, ret);
+		}
+
+		// Flags: Private | Assembly | Famorassem | Hidebysig | Specialname
+		// Addresss: 00007FFA42DF22A0
+		void get_bounds_Injected(UnityEngine::Bounds& ret)
+		{
+			static NaMethodInvoker<void, Sprite*, UnityEngine::Bounds&> invoker = METHOD_ADDRESS("System.Void", "get_bounds_Injected", "UnityEngine.Bounds&");
+			invoker(this, ret);
+		}
+
+		// Flags: Private | Assembly | Famorassem | Hidebysig | Specialname
+		// Addresss: 00007FFA42DF2470
+		void get_rect_Injected(UnityEngine::Rect& ret)
+		{
+			static NaMethodInvoker<void, Sprite*, UnityEngine::Rect&> invoker = METHOD_ADDRESS("System.Void", "get_rect_Injected", "UnityEngine.Rect&");
+			invoker(this, ret);
+		}
+
+		// Flags: Private | Assembly | Famorassem | Hidebysig | Specialname
+		// Addresss: 00007FFA42DF2390
+		void get_pivot_Injected(UnityEngine::Vector2& ret)
+		{
+			static NaMethodInvoker<void, Sprite*, UnityEngine::Vector2&> invoker = METHOD_ADDRESS("System.Void", "get_pivot_Injected", "UnityEngine.Vector2&");
+			invoker(this, ret);
 		}
 	};
 }

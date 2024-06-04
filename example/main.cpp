@@ -5,6 +5,7 @@
 #include "UnityEngine.AnimationModule.h"
 #include "UnityEngine.PhysicsModule.h"
 #include "UnityEngine.IMGUIModule.h"
+#include "UnityEngine.UI.h"
 
 HINSTANCE module = NULL;
 

@@ -24,6 +24,9 @@
     <ClInclude Include="..\UnityEngine.PhysicsModule.h">
       <Filter>SDK</Filter>
     </ClInclude>
+    <ClInclude Include="..\UnityEngine.UI.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\UnityEngine.CoreModule.h">
